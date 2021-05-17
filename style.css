@@ -1,0 +1,23 @@
+.grid{
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr 5fr ;
+}
+:root{
+    --grid-cols: 16;
+    --grid-rows: 16;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(16,40px);
+    grid-template-rows: repeat(16,40px);
+
+}
+
+.grid-item{
+    padding: 1em;
+    border: 1px solid black;
+    text-align: center; 
+    
+
+}
