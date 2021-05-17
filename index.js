@@ -25,4 +25,13 @@ console.log(containerElements)
 for(let i = 0; i < containerElements.length; i++){
    containerElements[i].addEventListener("mouseover",function(){containerElements[i].style.backgroundColor = "red"})
 }
-
+/*
+let clearbtn = document.getElementById('clear-button')
+console.log(clearbtn)
+clearbtn.addEventListener('click', function(){console.log('hi')})
+*/
+function clearGrid(){
+    containerElements.forEach(element => {
+        element.style.backgroundColor = 'white'
+    });
+}
